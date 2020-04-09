@@ -8,10 +8,12 @@ type Notice struct {
 }
 
 type AndroidNotice struct {
-	Alert     string                 `json:"alert"`
-	Title     string                 `json:"title,omitempty"`
-	BuilderId int                    `json:"builder_id,omitempty"`
-	Extras    map[string]interface{} `json:"extras,omitempty"`
+	Alert       string                 `json:"alert"`
+	Title       string                 `json:"title,omitempty"`
+	BuilderId   int                    `json:"builder_id,omitempty"`
+	UriActivity string                 `json:"uri_activity,omitempty"`
+	UriAction   string                 `json:"uri_action,omitempty"`
+	Extras      map[string]interface{} `json:"extras,omitempty"`
 }
 
 type IOSNotice struct {
